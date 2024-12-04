@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="/css/nomain.css">
     <script src="/js/script.js" defer></script>
     <style>
+        
+        /*
         .excursion-container {
         display: flex;
         flex-direction: column;
         gap: 20px; /* Расстояние между карточками */
     }
+    .excursion-card {
+    width: 100%;
+    max-width: 100%; /* Это гарантирует, что карточки будут занимать всю ширину контейнера */
+    box-sizing: border-box; /* Чтобы учитывать паддинги и бордеры в расчете ширины */
+}
+*/
     </style>
     
 
@@ -250,5 +258,28 @@
         </div>
 
     </main>
+    <script>
+        // Найти кнопку
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        // Обработчик прокрутки
+        window.addEventListener('scroll', () => {
+            // Высота всей страницы
+            const pageHeight = document.documentElement.scrollHeight;
+
+            // Высота окна браузера
+            const viewportHeight = window.innerHeight;
+
+            // Текущая позиция прокрутки
+            const scrollPosition = window.scrollY;
+
+            // Проверяем условие: прокручено более 30% длины страницы, и это не начало
+            if (scrollPosition > (pageHeight * 0.3 - viewportHeight) && scrollPosition > 0) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
