@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excursions in Japan</title>
+    <style>
+        /* Основной стиль страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .excursion-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .excursion-card {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .excursion-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-color: #3498db;
+        }
+
+        .excursion-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .excursion-card h2 {
+            margin: 10px;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .excursion-card p {
+            margin: 10px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .excursion-card button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .excursion-card button:hover {
+            background-color: #1d6fa5;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .excursion-card.selected {
+        border-color: #e67e22;
+        box-shadow: 0 4px 10px rgba(230, 126, 34, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Excursions in Japan</h1>
+    </header>
+    <main>
+        <div class="excursion-container">
+            <!-- Карточка экскурсии -->
+            <div class="excursion-card">
+                <img src="https://via.placeholder.com/300x200?text=Tokyo+Tour" alt="Tokyo Tour">
+                <h2>Tokyo Tour</h2>
+                <p>Explore the bustling capital of Japan, including Shibuya and Asakusa.</p>
+                <button>Book Now</button>
+            </div>
+            <!-- Карточка экскурсии -->
+            <div class="excursion-card">
+                <img src="https://via.placeholder.com/300x200?text=Kyoto+Tour" alt="Kyoto Tour">
+                <h2>Kyoto Tour</h2>
+                <p>Discover the ancient temples and traditions of Kyoto.</p>
+                <button>Book Now</button>
+            </div>
+            <!-- Карточка экскурсии -->
+            <div class="excursion-card">
+                <img src="https://via.placeholder.com/300x200?text=Osaka+Tour" alt="Osaka Tour">
+                <h2>Osaka Tour</h2>
+                <p>Enjoy the vibrant nightlife and delicious street food of Osaka.</p>
+                <button>Book Now</button>
+            </div>
+            <!-- Карточка экскурсии -->
+            <div class="excursion-card">
+                <img src="https://via.placeholder.com/300x200?text=Nikko+Tour" alt="Nikko Tour">
+                <h2>Nikko Tour</h2>
+                <p>Experience the serene beauty of Nikko's UNESCO World Heritage sites.</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Excursions in Japan. All rights reserved.</p>
+    </footer>
+    <script>
+        const cards = document.querySelectorAll('.excursion-card');
+        cards.forEach(card => {
+        card.addEventListener('click', () => {
+        card.classList.toggle('selected');
+        });
+    });
+
+    </script>
+</body>
+</html>

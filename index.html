@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+git branch -M main<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,8 @@
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <a href="/" class="header__logo-link">
-                        <img src="./img/svg/odigo-logo.svg" alt="Discover Amazing places in Japan" class="header__logo-pic">
+                    <a href="https://www.hse.ru/" class="header__logo-link">
+                        <img src="./img/logo-hse.png" alt="Discover Amazing places in Japan" class="header__logo-pic">
                     </a>
                 </div>
     
@@ -29,7 +29,10 @@
                             <a href="#videos" class="header__link js-scroll">Videos</a>
                         </li>
                         <li class="header__item">
-                            <a href="#sign-in" class="header__link js-scroll">Sign in</a>
+                            <a href="#sign-in" class="header__link js-scroll">Chose what you need</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="price_list.html" class="header__link js-scroll">Price list</a>
                         </li>
 					</ul>
 					<div class="header__nav-close">
@@ -56,17 +59,37 @@
                     Discover Amazing places in Japan
                 </h1>
                 <p class="intro__subtitle">
-                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                    From vibrant cities to serene landscapes, Japan offers unique experiences for every traveler. Discover hidden gems, local flavors, and breathtaking sights across this beautiful country.
                 </p>
                 <form class="search-form">
-                    <fieldset class="serach-form__wrap">
+                    <fieldset class="search-form__wrap"> 
                         <p class="search-form__info">
-                            <input type="text" name="user-like-to-do" class="search-form__field" placeholder="What would you like to do?">
-                            <input type="text" name="user-like-to-do" class="search-form__field" placeholder="Where would you like to go?">
-                            <button type="submit" class="search-form__submit">search</button>
+                            <!-- Цель посещения -->
+                            <select id="visit-purpose" name="visit-purpose" class="search-form__field">
+                                <option value="" disabled selected hidden>what would you like to do?</option>
+                                <option value="business">Business</option>
+                                <option value="travel">Travel</option>
+                                <option value="guide">Need a guide for cities</option>
+                            </select>
+                        
+                            <!-- Выбор города -->
+                            <select id="destination" name="destination" class="search-form__field">
+                                <option value="" disabled selected hidden>where would you like to go?</option>
+                                <option value="NAGOYA">NAGOYA</option>
+                                <option value="NIIGATA">NIIGATA</option>
+                                <option value="OSAKA">OSAKA</option>
+                                <option value="SAITAMA">SAITAMA</option>
+                                <option value="UENO">UENO</option>
+                                <option value="SHIBUYA">SHIBUYA</option>
+                            </select>
+                        
+                            <!-- Кнопка отправки -->
+                            <button type="submit" class="search-form__submit">Search</button>
                         </p>
+                        
                     </fieldset>
                 </form>
+                
             </div>
         </section>
         <!-- Intro end -->
@@ -86,9 +109,9 @@
                             Welcome to Odigo!
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Your gateway to exploring Japan’s most popular attractions and hidden treasures with ease.
                         </p>
-                        <a href="#!" class="benefits__card-more">
+                        <a href="/price_list.html" class="benefits__card-more">
                             LEARN MORE
                         </a>
                     </div>
@@ -100,9 +123,9 @@
                             Your Personal Japan Guide
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Get personalized recommendations tailored to your interests, from cultural landmarks to culinary delights.
                         </p>
-                        <a href="#!" class="benefits__card-more">
+                        <a href="/price_list.html" class="benefits__card-more">
                             LEARN MORE
                         </a>
                     </div>
@@ -114,9 +137,9 @@
                                 Promoting Local Businesses
                         </h3>
                         <p class="benefits__card-desc">
-                                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            Support local artisans and businesses while you explore authentic Japanese culture and craftsmanship.
                         </p>
-                        <a href="#!" class="benefits__card-more">
+                        <a href="/price_list.html" class="benefits__card-more">
                             LEARN MORE
                         </a>
                     </div>
@@ -132,7 +155,7 @@
                     <h2 class="places__title section-title">
                         Get inspired for your next trip
                     </h2>
-                    <a href="#!" class="places__view-all">VIEW ALL</a>
+                    <a href="/price_list.html" class="places__view-all">VIEW ALL</a>
                 </div>
 
                 <div class="places__cards">
@@ -196,9 +219,9 @@
                             Prefecture in Focus: Tottori
                         </h3>
                         <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                            Discover Tottori's stunning sand dunes, picturesque coastlines, and rich cultural heritage. Known for its tranquil beauty, Tottori offers a peaceful escape and authentic local experiences.
                         </p>
-                        <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+                        <a href="/price_list.html" class="tour__more">VIEW PREFECTURE</a>
                     </div>
                 </div>
 
@@ -208,9 +231,9 @@
                             Featured Neighborhood: Kyoto’s Arashiyama
                         </h3>
                         <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                            Arashiyama is a captivating neighborhood known for its iconic bamboo grove and scenic views of the Katsura River. A perfect blend of natural beauty and historic temples, it’s a must-visit in Kyoto.
                         </p>
-                        <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+                        <a href="/price_list.html" class="tour__more">VIEW PREFECTURE</a>
                     </div>
                     <div class="tour__pic tour__pic_mob-first">
                         <img src="./img/tour-2-min.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
@@ -240,21 +263,20 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        1468
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        748
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            Nagoya is a vibrant industrial hub in Japan, known for its rich cultural heritage, including the iconic Nagoya Castle. It’s also a major center for automotive innovation, being home to Toyota.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                     <div class="top__card">
@@ -266,20 +288,23 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        2970
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        589
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            • Niigata is famous for its beautiful coastline along the Sea of Japan.<br>
+                            • It is also known for its premium rice production, essential for sake brewing.<br>
+                            • The city offers scenic landscapes.<br>
+                            • These landscapes are especially stunning during cherry blossom season.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                     <div class="top__card">
@@ -291,20 +316,23 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        1091
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        896
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            • Osaka is Japan’s food capital, famous for dishes like takoyaki and okonomiyaki.<br>
+                            • Known for its friendly locals and vibrant nightlife.<br>
+                            • It also boasts the impressive Osaka Castle.<br>
+                            • Universal Studios Japan is another highlight.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                     <div class="top__card">
@@ -316,20 +344,23 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        2649
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        876
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            • Saitama is a peaceful suburb near Tokyo.<br>
+                            • It’s popular for its green parks and family-friendly attractions.<br>
+                            • The Railway Museum is located here.<br>
+                            • This museum showcases Japan's railway history.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                     <div class="top__card">
@@ -341,21 +372,23 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        3630
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        465
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            • Ueno is a cultural district in Tokyo.<br>
+                            • Renowned for Ueno Park, which features a zoo, museums, and cherry blossoms.<br>
+                            • The area also houses Ameya-Yokocho.<br>
+                            • It’s a lively street market with various foods and goods.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                     <div class="top__card">
@@ -367,20 +400,23 @@
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
-                                        221
+                                        624
                                     </span>
                                 </div>
                                 <div class="top__card-comments">
                                     <span class="top__card-comments-value">
-                                        50
+                                        237
                                     </span>
                                 </div>
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            • Shibuya is a bustling neighborhood in Tokyo. 
+                            • It’s famous for the Shibuya Crossing, the busiest pedestrian crossing in the world. 
+                            • It’s a center for youth fashion and entertainment. 
+                            • It’s also a hub for cutting-edge technology.
                         </p>
-                        <a href="#!" class="top__card-more">SEE MORE</a>
+                        <a href="/price_list.html" class="top__card-more">SEE MORE</a>
                     </div>
 
                 </div>
@@ -402,7 +438,7 @@
         <div class="wrapper">
             <div class="footer__item">
                 <div class="footer__logo">
-                    <img src="./img/svg/odigo-logo-footer.svg" alt="Discover Amazing places in Japan" class="footer__logo-pic">
+                    <img src="./img/logo-hse.png" alt="Discover Amazing places in Japan" class="footer__logo-pic">
                 </div>
                 <nav class="footer__nav">
                     <ul class="footerm__menu">
@@ -460,7 +496,56 @@
             </div>
         </div>
     </footer>
+    
+    <a href="#top" class="back-to-top">
+        <img src="./img/стрелка.png" alt="Back to Top">
+    </a>
+    <script>
+        // Найти кнопку
+        const backToTopButton = document.querySelector('.back-to-top');
 
+        // Обработчик прокрутки
+        window.addEventListener('scroll', () => {
+            // Высота всей страницы
+            const pageHeight = document.documentElement.scrollHeight;
+
+            // Высота окна браузера
+            const viewportHeight = window.innerHeight;
+
+            // Текущая позиция прокрутки
+            const scrollPosition = window.scrollY;
+
+            // Проверяем условие: прокручено более 30% длины страницы, и это не начало
+            if (scrollPosition > (pageHeight * 0.3 - viewportHeight) && scrollPosition > 0) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
     <script src="./js/main-es5.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.search-form');
+    const purposeSelect = document.getElementById('visit-purpose');
+    const destinationSelect = document.getElementById('destination');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+        const purpose = purposeSelect.value;
+        const city = destinationSelect.value;
+
+        // Проверка, что все обязательные поля заполнены
+        if (!purpose || !city) {
+            alert('Please select both a purpose and a city!');
+            return; // Прерываем выполнение, если не выбраны все поля
+        }
+
+        // Перенаправление на страницу с выбранным городом, передавая параметры через URL
+        window.location.href = `price_list.html?city=${encodeURIComponent(city)}&purpose=${encodeURIComponent(purpose)}`;
+    });
+});
+    </script>
 </body>
 </html>

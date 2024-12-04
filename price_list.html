@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excursion Cart</title>
+    <link rel="stylesheet" href="/css/nomain.css">
+    <script src="/js/script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Excursions in Japan</h1>
+    </header>
+    <main>
+        <!-- Контейнер экскурсий -->
+        <div class="excursion-container">
+
+            <!-- Карточка для Киото -->
+            <div class="excursion-card" data-name="Excursion Kioto">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Ежедневно</span>
+                </div>
+                <img src="/img/price/киото.jpeg" alt="Excursion Image">
+                <h2>Экскурсия в Киото: Храмы и Сады</h2>
+                <ul>
+                    <li>Обзорная экскурсия по Киото</li>
+                    <li>Тур на 6-7 часов из Осаки</li>
+                    <li>Храм Золотого павильона</li>
+                    <li>Сад камней и дзен-буддизм</li>
+                    <li>Уютные чайные домики и традиционные рынки</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>28 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Нара -->
+            <div class="excursion-card" data-name="Excursion Nara">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Понедельник, Четверг, Суббота</span>
+                </div>
+                <img src="/img/price/нара.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Нара: Древний Парк и Токийский Замок</h2>
+                <ul>
+                    <li>Пешеходный тур по парку Нара</li>
+                    <li>Тур на 8 часов из Осаки</li>
+                    <li>Токийский замок и древний храм Тодай-джи</li>
+                    <li>Олени Нары и храмы эпохи Хэйан</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>32 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Окинавы -->
+            <div class="excursion-card" data-name="Excursion Okinava">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Вторник, Пятница</span>
+                </div>
+                <img src="/img/price/окинава.jpg" alt="Excursion Image">
+                <h2>Экскурсия на Окинаву: Пляжи и Традиции</h2>
+                <ul>
+                    <li>Тур по пляжам и культурным местам Окинавы</li>
+                    <li>Тур на 7 часов из Нахи</li>
+                    <li>Традиционные окинавские танцы и кухня</li>
+                    <li>Коралловые рифы и исторические крепости</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>40 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Токио -->
+            <div class="excursion-card" data-name="Excursion Tokyo">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Ежедневно</span>
+                </div>
+                <img src="/img/price/токие.jpg" alt="Excursion Image">
+                <h2>Экскурсия по Токио: Город Будущего</h2>
+                <ul>
+                    <li>Тур по самым современным районам Токио</li>
+                    <li>Тур на 5-6 часов</li>
+                    <li>Шибуя и Харадзюку: молодежная культура</li>
+                    <li>Токийская башня и смотровая площадка</li>
+                    <li>Технологические центры и футуристичные районы</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>22 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Хоккайдо -->
+            <div class="excursion-card" data-name="Excursion Hokkaydo">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Каждую среду</span>
+                </div>
+                <img src="/img/price/хокайдо.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Хоккайдо: Природа и Горные Лаванды</h2>
+                <ul>
+                    <li>Тур по природным достопримечательностям Хоккайдо</li>
+                    <li>Тур на 8-9 часов из Саппоро</li>
+                    <li>Горные лаванды и озера</li>
+                    <li>Горнолыжные курорты и парки</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>36 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div> 
+            <!-- Карточка для Нагасаки -->
+            <div class="excursion-card" data-name="Excursion Nagasaki">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Среда, Суббота</span>
+                </div>
+                <img src="/img/price/нагасаки.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Нагасаки: История и Культура</h2>
+                <ul>
+                    <li>Посещение исторических музеев</li>
+                    <li>Тур на 6-7 часов</li>
+                    <li>Сад Гловера и мост Меганэ</li>
+                    <li>Традиционные блюда Нагасаки</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>29 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Кобе -->
+            <div class="excursion-card" data-name="Excursion Kobe">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Понедельник, Четверг</span>
+                </div>
+                <img src="/img/price/кобе.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Кобе: Порт и Вино</h2>
+                <ul>
+                    <li>Тур на 5 часов</li>
+                    <li>Прогулка по порту Кобе</li>
+                    <li>Посещение винодельни</li>
+                    <li>Музей землетрясения Хансин</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>24 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Фукуоки -->
+            <div class="excursion-card" data-name="Excursion Fukuoki">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Вторник, Пятница</span>
+                </div>
+                <img src="/img/price/фукуори.jpeg" alt="Excursion Image">
+                <h2>Экскурсия в Фукуоку: Гастрономия и Архитектура</h2>
+                <ul>
+                    <li>Тур на 6 часов</li>
+                    <li>Посещение знаменитых ресторанов</li>
+                    <li>Старинные храмы и парки</li>
+                    <li>Мост Фукуока и традиционные рынки</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>26 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Осаки -->
+            <div class="excursion-card" data-name="Excursion Osaka">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Ежедневно</span>
+                </div>
+                <img src="/img/price/осаки.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Осаку: Замок и Умеда Скай</h2>
+                <ul>
+                    <li>Обзорный тур по центру Осаки</li>
+                    <li>Тур на 4-5 часов</li>
+                    <li>Посещение Замка Осаки</li>
+                    <li>Башня Умеда Скай</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>21 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Хиросимы -->
+            <div class="excursion-card" data-name="Excursion Hirosima">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Четверг, Воскресенье</span>
+                </div>
+                <img src="/img/price/хиросимы.jpeg" alt="Excursion Image">
+                <h2>Экскурсия в Хиросиму: Историческая память</h2>
+                <ul>
+                    <li>Музей мира и парк мемориалов</li>
+                    <li>Тур на 7 часов</li>
+                    <li>Остров Миядзима</li>
+                    <li>Традиционные блюда Хиросимы</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>34 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+        
+            <!-- Карточка для Йокогамы -->
+            <div class="excursion-card" data-name="Excursion Youkogama">
+                <div class="excursion-card-header">
+                    <span class="excursion-day">Ежедневно</span>
+                </div>
+                <img src="/img/price/йокогамы.jpg" alt="Excursion Image">
+                <h2>Экскурсия в Йокогаму: Гавань и Китайский квартал</h2>
+                <ul>
+                    <li>Тур на 5 часов</li>
+                    <li>Прогулка по гавани Йокогамы</li>
+                    <li>Посещение Китайского квартала</li>
+                    <li>Парк Ямасита</li>
+                </ul>
+                <div class="excursion-price">
+                    <span>23 000 ₽</span>
+                </div>
+                <button class="add-to-cart">Заказать</button>
+            </div>
+                    
+            
+
+        </div>
+        
+        <!-- Корзина -->
+        <div class="cart" id="cart" style="display: none;">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Здесь будут добавляться элементы -->
+            </ul>
+            <p id="total-cost">Итоговая стоимость: 0 ₽</p>
+            <button class="checkout-button" id="checkout-button" style="display: none;">Оплатить</button>
+            <button class="clear-cart">Очистить корзину</button>
+        </div>
+
+    </main>
+</body>
+</html>
